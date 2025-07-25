@@ -13,16 +13,18 @@ public class Game {
     private String genre;
     private String platform;
     private Double rating;
+    private String state;
 
     // Constructeur vide obligatoire
     public Game() {}
 
     // Constructeur avec tous les champs
-    public Game(String title, String genre, String platform, Double rating) {
+    public Game(String title, String genre, String platform, Double rating, String state) {
         this.title = title;
         this.genre = genre;
         this.platform = platform;
         this.rating = rating;
+        this.state = state;
     }
 
     // Getters et Setters
@@ -38,4 +40,7 @@ public class Game {
 
     public Double getRating() { return rating; }
     public void setRating(Double rating) { this.rating = rating; }
+
+    public String getState() { return state; }
+    public void setState(String state) { this.state = state; }
 }
